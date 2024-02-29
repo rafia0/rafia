@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'SpaceGrotesk-Bold';
+    src: url('../fonts/SpaceGrotesk-Bold.eot');
+    src: url('../fonts/SpaceGrotesk-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/SpaceGrotesk-Bold.ttf') format('truetype'), url('../fonts/SpaceGrotesk-Bold.otf') format('opentype'), url('../fonts/SpaceGrotesk-Bold.svg') format('svg');
+}
+@font-face {
+    font-family: 'SpaceGrotesk-Light';
+    src: url('../fonts/SpaceGrotesk-Light.eot');
+    src: url('../fonts/SpaceGrotesk-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/SpaceGrotesk-Light.ttf') format('truetype'), url('../fonts/SpaceGrotesk-Light.otf') format('opentype'), url('../fonts/SpaceGrotesk-Light.svg') format('svg');
+}
+@font-face {
+    font-family: 'SpaceGrotesk-Medium';
+    src: url('../fonts/SpaceGrotesk-Medium.eot');
+    src: url('../fonts/SpaceGrotesk-Medium.eot?#iefix') format('embedded-opentype'),url('../fonts/SpaceGrotesk-Medium.ttf') format('truetype'), url('../fonts/SpaceGrotesk-Medium.otf') format('opentype'), url('../fonts/SpaceGrotesk-Medium.svg') format('svg');
+}
+@font-face {
+    font-family: 'SpaceGrotesk-Regular';
+    src: url('../fonts/SpaceGrotesk-Regular.eot');
+    src: url('../fonts/SpaceGrotesk-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/SpaceGrotesk-Regular.ttf') format('truetype'), url('../fonts/SpaceGrotesk-Regular.otf') format('opentype'), url('../fonts/SpaceGrotesk-Regular.svg') format('svg');
+}
+@font-face {
+    font-family: 'SpaceGrotesk-SemiBold';
+    src: url('../fonts/SpaceGrotesk-SemiBold.eot');
+    src: url('../fonts/SpaceGrotesk-SemiBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/SpaceGrotesk-SemiBold.ttf') format('truetype'), url('../fonts/SpaceGrotesk-SemiBold.otf') format('opentype'), url('../fonts/SpaceGrotesk-SemiBold.svg') format('svg');
+}
+
+/* ---------------- For Animation on Scroll ---------------- */
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {visibility: visible; animation:slide 1s;}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+
+
+/*header menu css start*/
+
+body{font-family: 'SpaceGrotesk-Regular';}
+.main-header {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 11;
+  
+    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+}
+.main-header.is-sticky {
+    background: #fff;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 71%);
+    padding: 3px 0px 0px;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+}
+.main-header .bg-body-tertiary{
+  background: none !important;
+}
+.main-header .bg-body-tertiary .navbar-brand {
+  margin-right: 45px;
+}
+.main-header .bg-body-tertiary img{
+  height: 80px;
+}
+.navbar-nav .nav-link.active {
+  color: #fff;
+    background: #FFFFFF1A;
+        padding: 4px 10px;
+    border-radius: 4px
+}
+.main-header .bg-body-tertiary ul li {
+      padding-right: 17px;
+
+}
+.main-header .bg-body-tertiary ul li a{
+ font-family: 'SpaceGrotesk-Bold';
+ color: #fff;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.main-header.is-sticky .bg-body-tertiary ul li a{
+ font-family: 'SpaceGrotesk-Bold';
+ color: #000;
+  padding: 4px 10px;
+  cursor: pointer;
+  }
+.main-header .bg-body-tertiary ul li a:hover{
+  color: #fff;
+    background: #FFFFFF1A;
+    border-radius: 4px;
+    transition:0.5s;
+}
+.main-header.is-sticky .bg-body-tertiary ul li a:hover{
+   color: #fff;
+    background: #04011c;
+    border-radius: 4px;
+    transition:0.5s;
+}
+.main-header .logins a {
+      color: #fff;
+    padding: 13px;
+    text-decoration: none;
+    font-family: 'SpaceGrotesk-Bold';
+}
+.main-header.is-sticky .logins a{
+  color: #000;
+}
+.main-header .logins .btn{
+   color: #fff;
+    background: #FFFFFF1A;
+    border: none;
+     padding: 0 25px;
+}
+.main-header .logins .btn:hover{
+  transform: scale(1.1);
+  border-color: #E3EBF4;
+    background-color: #FFFFFF;
+    transition: 0.3s ;
+    color: #000;
+    font-family: 'SpaceGrotesk-Bold';
+}
+.main-header.is-sticky .logins .btn{
+   color: #fff;
+    background: #C30000;
+    border: none;
+  }
+
+/*header menu css end*/
+
+
+
+/*newsletter css start*/
+
+.newsletter h1{
+  font-family: 'SpaceGrotesk-Bold';
+  color: #000;
+}
+.newsletter p{
+  color: #4d4d4d;
+
+}
+.newsletter input{
+  min-height: 60px;
+  border:1px solid #D0D0D0;
+}
+.newsletter .btn{
+      color: #fff;
+    background: #C30000;
+    border: none;
+    padding: 0 25px;
+    font-family: 'SpaceGrotesk-Bold';
+}
+.newsletter .btn:hover {
+  border-color: #E3EBF4;
+  background-color: #000;
+  transition: 0.3s ;
+  color: #fff;
+  font-family: 'SpaceGrotesk-Bold';
+}
+
+/*end*/
+
+/*footer css start*/
+footer{background: #000;padding-top: 75px;padding-bottom: 50px;color: #fff;}
+footer img{width: 220px;}
+footer h2{margin-bottom: 20px;font-size: 26px;font-family: 'SpaceGrotesk-Bold';}
+footer p a{font-size: 16px;color: #fff;}
+footer p {font-size: 17px;margin-bottom: 20px;color: #fff;line-height: 30px;}
+footer p strong a{font-size: 18px;color: #fff;}
+footer p a:hover{text-decoration: none;}
+footer ul{padding: 0;}
+footer ul li{list-style: none;}
+footer ul li i{color: #c30000;}
+footer ul li a{font-size: 16px;line-height: 30px;color: #fff;text-decoration: none;}
+footer ul li a:hover{text-decoration: none;}
+.footer-bottom{
+  border-top:1px solid #ffffff1a;
+  background: #000;
+  padding: 5px 0 0;
+  color: #fff;
+}
+.footer-bottom img{
+  width: 16px;
+}
+.footer-bottom a {
+  color: #C30000;
+}
+.footer-bottom p{
+  margin-bottom: 5px;
+}
+
+/*end*/
